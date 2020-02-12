@@ -15,14 +15,14 @@ body {
 }
 
 a {
-  color: #1bb1dc;
+  color: #ff4e00;
   transition: 0.5s;
 }
 
 a:hover,
 a:active,
 a:focus {
-  color: #0a98c0;
+  color: #ff4e00;
   outline: none;
   text-decoration: none;
 }
@@ -87,12 +87,21 @@ h6 {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #f2f2f2;
-  border-top: 6px solid #1bb1dc;
+  border-top: 6px solid #ff4e00;
   border-radius: 50%;
   width: 60px;
   height: 60px;
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
+}
+
+.preloader-img {
+  z-index: -10;
+  width: 35px;
+  height: auto;
+  position: fixed;
+  top: calc(50% - 17px);
+  left: calc(50% - 17px);
 }
 
 @-webkit-keyframes animate-preloader {
@@ -572,7 +581,8 @@ h6 {
 --------------------------------*/
 
 .section-bg {
-  background: #f5f8fd;
+  background-color: #ff4e00;
+  background-image: linear-gradient(315deg, #ff4e00 0%, #fcfcfc 54%);
 }
 
 /* About Us Section
@@ -592,11 +602,15 @@ h6 {
   font-weight: 700;
 }
 
-#about .about-content h3 {
+#about .about-content h6 {
   color: #696592;
-  font-weight: 400;
-  font-size: 22px;
+  font-weight: 300;
+  font-size: 15px;
   font-style: italic;
+}
+
+#about .about-content p {
+  font-size: 15px;
 }
 
 #about .about-content ul {
@@ -606,12 +620,13 @@ h6 {
 
 #about .about-content ul li {
   padding-bottom: 10px;
+  font-size: 15px;
 }
 
 #about .about-content ul li i {
   font-size: 20px;
   padding-right: 4px;
-  color: #1bb1dc;
+  color: #FF4E00;
 }
 
 #about .about-img {
@@ -621,15 +636,13 @@ h6 {
 
 #about .about-img img {
   width: 100%;
-  transition: width 2s, height 2s, transform 2s;
 }
 
-#about .about-img img:hover {
-  width: 100%;
-  -webkit-transform: rotate(180deg);
-  transform: rotate(360deg);
+.top-header {
+  background: -webkit-linear-gradient(#EC9F05, #FF4E00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
 
 /* Services Section
 --------------------------------*/
@@ -639,6 +652,7 @@ h6 {
 }
 
 #services .box {
+  height: 509px;
   padding: 30px;
   position: relative;
   overflow: hidden;
@@ -653,6 +667,7 @@ h6 {
 #services .box:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+  box-shadow: 0 0 3px #FF4E00;
 }
 
 #services .icon {
@@ -681,14 +696,14 @@ h6 {
 }
 
 #services .box:hover .title a {
-  color: #1bb1dc;
+  color: #EC9F05;
 }
 
 #services .description {
   font-size: 14px;
   line-height: 28px;
   margin-bottom: 0;
-  text-align: left;
+  text-align: justify;
 }
 
 /* Why Us Section
@@ -747,7 +762,8 @@ h6 {
 --------------------------------*/
 
 #call-to-action {
-  background: #2d2b46;
+  background: linear-gradient(rgba(255, 115, 0, 0.45), rgba(240, 88, 0, 0.45)), url("../img/getintouch.jpg") center;
+  background-attachment: fixed;
   background-size: cover;
   padding: 40px 0;
 }
@@ -764,21 +780,21 @@ h6 {
 
 #call-to-action .cta-btn {
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 8px 26px;
-  border-radius: 3px;
+  padding: 15px 30px;
+  border-radius: 50px;
   transition: 0.5s;
   margin: 10px;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   color: #fff;
 }
 
 #call-to-action .cta-btn:hover {
-  background: #1bb1dc;
-  border: 3px solid #1bb1dc;
+  background: rgba(255, 133, 27, 0.61);
+  border: 3px solid #ffffff;
 }
 
 /* Features Section
@@ -791,6 +807,10 @@ h6 {
 #features h4 {
   font-weight: 600;
   font-size: 24px;
+}
+
+.feature-item {
+  padding-top: 10%;
 }
 
 /* Portfolio Section
@@ -1082,7 +1102,7 @@ h6 {
 }
 
 #clients img {
-  max-width: 80%;
+  max-width: 150%;
   opacity: 0.5;
   transition: 0.3s;
   padding: 15px 0;
@@ -1090,6 +1110,7 @@ h6 {
 
 #clients img:hover {
   opacity: 1;
+  cursor: pointer;
 }
 
 #clients .owl-nav,
@@ -1108,7 +1129,7 @@ h6 {
 }
 
 #clients .owl-dot.active {
-  background-color: #1bb1dc;
+  background-color: #ff4e00;
 }
 
 /* Pricing Section
@@ -1218,7 +1239,7 @@ h6 {
 --------------------------------*/
 
 #faq {
-  padding: 60px 0;
+  padding:0 0 60px 0;
   overflow: hidden;
 }
 
