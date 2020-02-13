@@ -49,7 +49,7 @@ h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #1bb1dc;
+  background: -webkit-linear-gradient(#EC9F05, #FF4E00);
   color: #fff;
   width: 44px;
   height: 44px;
@@ -61,6 +61,10 @@ h6 {
   bottom: 15px;
   transition: background 0.5s;
   z-index: 11;
+}
+
+.back-to-top:hover {
+  background: -webkit-linear-gradient(rgb(214, 208, 196), #FF4E00);
 }
 
 .back-to-top i {
@@ -458,7 +462,7 @@ h6 {
   left: -260px;
   width: 260px;
   padding-top: 18px;
-  background: rgba(40, 38, 70, 0.8);
+  background: rgba(224, 127, 0, 0.747);
   transition: 0.4s;
 }
 
@@ -479,7 +483,7 @@ h6 {
 .mobile-nav a:hover,
 .mobile-nav .active > a,
 .mobile-nav li:hover > a {
-  color: #8dc2fa;
+  color: #ff4e00;
   text-decoration: none;
 }
 
@@ -535,7 +539,7 @@ h6 {
   top: 0;
   left: 0;
   position: fixed;
-  background: rgba(40, 38, 70, 0.8);
+  background: rgba(255, 255, 255, 0.8);
   overflow: hidden;
   display: none;
 }
@@ -549,7 +553,7 @@ h6 {
 }
 
 .mobile-nav-active .mobile-nav-toggle i {
-  color: #fff;
+  color: #ff4e00;
 }
 
 /*--------------------------------------------------------------
@@ -810,7 +814,42 @@ h6 {
 }
 
 .feature-item {
-  padding-top: 10%;
+  padding-top: 7%;
+}
+
+.join-btn {
+    font-family: "Montserrat", sans-serif;
+    width: 180px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding:10px 20px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #ff4e00;
+    color: #ff4e00;
+}
+
+.join-btn:hover {
+  color: #ffffff;
+  background-color: #EC9F05;
+}
+
+.career-text {
+  font-style: italic;
+  color:#ff4e00;
+}
+
+.career-img {
+  min-width: 100%;
+  height: 330px;
+  background:url(../img/career.jpg);
+  box-shadow: 15px 15px 15px 10px white inset, -25px -25px 0 -15px white inset;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Portfolio Section
@@ -1345,10 +1384,15 @@ h6 {
   color: #fff;
 }
 
+.footer-logo {
+  width:200px;
+  height: auto;
+}
+
 #footer .footer-top h4 {
   font-size: 14px;
   font-weight: bold;
-  color: #413e66;
+  color: #ff4e00;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 10px;
@@ -1373,11 +1417,11 @@ h6 {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #696592;
+  color: #000000;
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #1bb1dc;
+  color: #FF851B;
 }
 
 #footer .footer-top .footer-contact {
