@@ -349,7 +349,7 @@ h6 {
 /* Desktop Navigation */
 
 .logo {
-  width: 60px;
+  width: 47px;
   height: auto;
 }
 
@@ -1429,6 +1429,18 @@ h6 {
 
 #footer .footer-top .footer-contact p {
   line-height: 26px;
+}
+
+.footer-newsletter h6 {
+  font-style: italic;
+  color:#ff4e00;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.footer-newsletter p {
+  text-align: justify;
 }
 
 #footer .footer-top .footer-newsletter {
