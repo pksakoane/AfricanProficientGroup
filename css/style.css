@@ -210,7 +210,7 @@ h6 {
 
 #header .logo img {
   padding: 0;
-  margin: -1px 0;
+  margin: -7px 0;
   max-height: auto;
 }
 
@@ -340,6 +340,8 @@ h6 {
 #intro .intro-info .btn-get-started:hover,
 #intro .intro-info .btn-services:hover {
   background: transparent !important;
+  border-top-right-radius: 25px 100%;
+  transition: all 1s;
 }
 
 /*--------------------------------------------------------------
@@ -607,7 +609,7 @@ h6 {
 }
 
 #about .about-content h6 {
-  color: #696592;
+  color: #ff4e00;
   font-weight: 300;
   font-size: 15px;
   font-style: italic;
@@ -695,12 +697,13 @@ h6 {
   font-size: 18px;
 }
 
-#services .title a {
+#services .title {
   color: #111;
 }
 
-#services .box:hover .title a {
+#services .box:hover .title {
   color: #EC9F05;
+  cursor: pointer;
 }
 
 #services .description {
@@ -760,6 +763,18 @@ h6 {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #8a87b6;
+}
+
+.csi-img {
+  width: 300px;
+  height: auto;
+  padding: 2%;
+}
+
+.lethukuyhula-img {
+  width: 190px;
+  height: auto;
+  padding: 2%;
 }
 
 /* Call To Action Section
@@ -1384,7 +1399,7 @@ h6 {
 }
 
 .footer-logo {
-  width:200px;
+  width:180px;
   height: auto;
 }
 
@@ -1439,9 +1454,7 @@ h6 {
   font-weight: 600;
 }
 
-.footer-newsletter p {
-  text-align: justify;
-}
+
 
 #footer .footer-top .footer-newsletter {
   margin-bottom: 30px;
@@ -1557,7 +1570,7 @@ h6 {
 #footer .copyright {
   text-align: center;
   padding-top: 30px;
-  color: #535074;
+  color: #000000;
   font-size: 13px;
 }
 
@@ -1669,7 +1682,7 @@ h6 {
   }
 
   #intro .intro-info h2 {
-    font-size: 34px;
+    font-size: 28px;
     margin-bottom: 30px;
   }
 
@@ -1691,10 +1704,27 @@ h6 {
   #testimonials .testimonial-item p {
     margin-left: 0;
   }
+
+  #about .about-img {
+    position: relative;
+    margin: -30px 30px 30px 30px;
+  }
+
+  .intro-hero-text {
+    font-size: 38px;
+    font-weight: 500;
+  }
+
 }
 
 @media (max-width: 574px) {
   #footer .footer-top .social-links a {
     margin-bottom: 25px;
   }
+  
+  #about .about-img {
+    position: relative;
+    margin: -30px 30px 30px 30px;
+  }
+
 }
